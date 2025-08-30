@@ -139,9 +139,9 @@ show_welcome_banner() {
 
 # Detección de Wazuh
 detect_wazuh() {
-    log_header "DETECCIÓN DE WAZUH"
+    log_header "CORRELACIÓN CON WAZUH"
     
-    echo "Wazuh es un SIEM que permite correlacionar CVEs e IoCs con eventos de seguridad."
+    echo "Threat Intel Hub puede correlacionar CVEs e IoCs detectados con eventos de seguridad almacenados en el SIEM Wazuh."
     echo
     read -p "¿Tiene Wazuh instalado en su infraestructura? (y/N): " has_wazuh
     
