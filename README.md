@@ -124,3 +124,56 @@ graph TB
     OTX -.->|"Pulses + IoCs<br/>Hourly updates"| OTX
     MISP -.->|"Events + Attributes<br/>Custom interval"| MISP
 ```
+Flujo de Datos Detallado:
+1. Recolección de CVEs (NVD)
+
+Frecuencia: Cada 4 horas
+Datos obtenidos:
+
+CVE ID, descripciones, CVSS scores
+CPE (productos afectados)
+Referencias y URLs
+
+
+Límites: 200 CVEs por request, 50 req/30s con API key
+
+2. Enriquecimiento KEV
+
+Fuente: CISA Known Exploited Vulnerabilities
+Datos: CVEs activamente explotados, ransomware associations
+Volumen: ~1000-1500 CVEs críticos
+
+3. Scoring EPSS
+
+Predicción: Probabilidad de explotación (0-1)
+Percentil: Ranking comparativo
+Actualización: Diaria, histórico guardado
+
+4. IoCs Collection
+Fuentes → Tipos de IoCs:
+- OTX: IPs, dominios, hashes, URLs
+- MISP: Campañas completas, TTPs
+- VirusTotal: Enriquecimiento de reputación
+5. Correlación Central
+El motor correlaciona:
+
+CVE ↔ IoC: Qué malware explota qué vulnerabilidad
+CVE ↔ KEV: Vulnerabilidades críticas activas
+IoC ↔ Wazuh: Detecciones en tu infraestructura
+Campaign Attribution: Agrupa IoCs por actor/campaña
+
+6. Integración Wazuh (Si está habilitado)
+Búsquedas en Wazuh:
+- IoCs en logs (últimos 7 días)
+- Vulnerabilidades en agentes
+- Correlación temporal de eventos
+7. Salidas del Sistema
+
+Alertas Email: Cuando hay CVEs críticos o IoCs detectados
+Reports HTML: Dashboard visual de amenazas
+API REST: Integración con otras herramientas
+Logs: Auditoría completa
+
+Volumen de Datos Esperado:
+FuenteFrecuenciaVolumen/CicloNVD4 horas200-500 CVEsKEV4 horas10-20 nuevosEPSS4 horasUpdates para todosOTX4 horas100-1000 IoCsMISP6 horasVariableWazuh30 minMiles de eventos
+El sistema construye una base de conocimiento que correlaciona vulnerabilidades con amenazas activas y las detecta en tu infraestructura si tienes Wazuh integrado.ReintentarClaude puede cometer errores. Verifique las respuestas.
