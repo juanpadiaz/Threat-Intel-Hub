@@ -143,7 +143,7 @@ graph TB
 
 ```bash
 # 1. Descargar el instalador
-wget -O ti-hub-installer.sh https://github.com/your-org/threat-intel-hub/releases/latest/download/threat-intel-hub-installer-v103.sh
+wget -O ti-hub-installer.sh https://github.com/juanpadiaz/Threat-Intel-Hub/releases/latest/download/threat-intel-hub-installer-v103.sh
 
 # 2. Verificar integridad (opcional)
 sha256sum ti-hub-installer.sh
@@ -856,7 +856,7 @@ nano /etc/threat-intel-hub/config.ini
 
 ```bash
 # Ejecutar script de desinstalación
-sudo bash uninstall.sh
+sudo bash ti_hub_uninstaller-1.0.3.sh
 
 # El script ofrece opciones para:
 # - Crear backup completo antes de desinstalar
@@ -1047,16 +1047,14 @@ El proyecto incluye un programa de certificación para analistas:
 
 ### Canales de Soporte
 
-- **GitHub Issues**: [Bug reports y feature requests](https://github.com/your-org/threat-intel-hub/issues)
-- **Discussions**: [Comunidad y Q&A](https://github.com/your-org/threat-intel-hub/discussions)
-- **Documentation**: [Wiki completa](https://github.com/your-org/threat-intel-hub/wiki)
-- **Discord**: [Chat en tiempo real](https://discord.gg/threat-intel-hub)
+- **GitHub Issues**: [Bug reports y feature requests](https://github.com/juanpadiaz/Threat-Intel-Hub/issues)
+- **Discussions**: [Comunidad y Q&A](https://github.com/juanpadiaz/Threat-Intel-Hub/discussions)
 
 ### Professional Services
 
 Para organizaciones enterprise, ofrecemos:
 - **Custom Integration Development**
-- **On-site Training y Deployment**
+- **On-site Training & Deployment**
 - **24/7 Support Contracts**
 - **Threat Intelligence Consulting**
 
@@ -1065,8 +1063,7 @@ Para organizaciones enterprise, ofrecemos:
 ## 👨‍💻 Autor y Licencia
 
 - **Desarrollador Principal**: Security Research Team
-- **Arquitecto**: Juan Pablo Díaz Ezcurdia
-- **Website**: [threat-intel-hub.org](https://threat-intel-hub.org)
+- **Arquitecto**: [Juan Pablo Díaz Ezcurdia](https://www.jpdiaz.com)
 - **Licencia**: MIT License
 - **Versión**: 1.0.3 - Actionable Intelligence
 - **Última Actualización**: Enero 2025
