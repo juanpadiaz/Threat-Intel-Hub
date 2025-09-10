@@ -146,7 +146,7 @@ graph TB
 git clone https://github.com/juanpadiaz/Threat-Intel-Hub.git
 
 # 2. Ingresar a la carpeta descargada
-cd Threat-Intel-Hub.git
+cd Threat-Intel-Hub
   
 # 3. Ejecutar instalación interactiva
 sudo bash  threat-intel-hub-installer-v103.sh
