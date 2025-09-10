@@ -143,18 +143,16 @@ graph TB
 
 ```bash
 # 1. Descargar el instalador
-wget -O ti-hub-installer.sh https://github.com/juanpadiaz/Threat-Intel-Hub/releases/latest/download/threat-intel-hub-installer-v103.sh
-
-# 2. Verificar integridad (opcional)
-sha256sum ti-hub-installer.sh
-# Comparar con: a1b2c3d4e5f6...
-
-# 3. Ejecutar instalación interactiva
-sudo bash ti-hub-installer.sh
-
-# 4. Verificar instalación
-sudo systemctl status threat-intel-hub
-sudo systemctl status threat-intel-hub-api
+git clone https://github.com/juanpadiaz/Threat-Intel-Hub.git
+ 
+# 2. Confirmar existencia de carpeta
+cd Threat-Intel-Hub.git
+ 
+# 3. Verificar integridad (opcional)
+sha256sum threat-intel-hub-installer-v103.sh
+ 
+# 4. Ejecutar instalación interactiva
+sudo bash  threat-intel-hub-installer-v103.sh
 ```
 
 ### Instalación con Docker
