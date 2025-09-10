@@ -4,6 +4,7 @@
 # Threat Intel Hub - Script de Instalación v1.0.3 (CORREGIDO)
 # Compatible con: Ubuntu 20.04+ LTS
 # Enfoque: Inteligencia Accionable basada en KEV/EPSS/IoCs
+# https://github.com/juanpadiaz/Threat-Intel-Hub
 # =============================================================================
 
 set -euo pipefail
