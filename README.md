@@ -149,7 +149,7 @@ git clone https://github.com/juanpadiaz/Threat-Intel-Hub.git
 cd Threat-Intel-Hub
   
 # 3. Ejecutar instalación interactiva
-sudo bash  threat-intel-hub-installer-v103.sh
+sudo bash ti_hub_uninstaller.sh
 ```
 
 ### Instalación con Docker
@@ -851,7 +851,7 @@ nano /etc/threat-intel-hub/config.ini
 
 ```bash
 # Ejecutar script de desinstalación
-sudo bash ti_hub_uninstaller-1.0.3.sh
+sudo bash ti_hub_uninstaller.sh
 
 # El script ofrece opciones para:
 # - Crear backup completo antes de desinstalar
@@ -892,7 +892,7 @@ docker volume rm threat-intel-hub_ti-hub-mysql
 
 ## 🔄 Changelog
 
-### v1.0.3 (Enero 2025) - Actionable Intelligence
+### v1.0.3 (Septiembre 2025) - Actionable Intelligence
 - ✅ **Triggers Inteligentes**: KEV, EPSS Spikes, MISP Priority
 - ✅ **APIs REST**: 15+ endpoints para integración automatizada
 - ✅ **Export Multi-formato**: EDL, Fortinet, Snort, YARA, STIX, Sigma
@@ -902,13 +902,13 @@ docker volume rm threat-intel-hub_ti-hub-mysql
 - ✅ **Optimización DB**: Índices especializados, particionamiento
 - ✅ **Docker Production**: Multi-stage builds, Kubernetes ready
 
-### v1.0.2 (Diciembre 2024) - Sistema Base
+### v1.0.2 (agosto 2024) - Sistema Base
 - 🎉 **Arquitectura Core**: Base de datos normalizada
 - 🔧 **Integración Básica**: NVD, KEV, EPSS, OTX
 - 📧 **Notificaciones**: Sistema de alertas por email
 - 🗄️ **Almacenamiento**: Correlaciones CVE-IoC básicas
 
-### v1.0.1 (Noviembre 2024) - Prototipo
+### v1.0.1 (junio 2024) - Prototipo
 - 🚀 **Release Inicial**: Monitoreo básico CVE
 - 📊 **Base de Datos**: Esquema inicial
 - ⚙️ **Servicio Systemd**: Daemon básico
