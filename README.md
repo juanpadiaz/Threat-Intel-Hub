@@ -149,7 +149,7 @@ git clone https://github.com/juanpadiaz/Threat-Intel-Hub.git
 cd Threat-Intel-Hub
   
 # 3. Ejecutar instalación interactiva
-sudo bash ti_hub_uninstaller.sh
+sudo bash ti_hub_installer.sh
 ```
 
 ### Instalación con Docker
