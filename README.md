@@ -132,7 +132,7 @@ graph TB
 
 | Componente | Versión Mínima | Recomendado | Notas |
 |------------|----------------|-------------|-------|
-| **OS** | Ubuntu 20.04+ LTS | Ubuntu 22.04+ | Probado en 20.04, 22.04, 24.04 |
+| **OS** | Ubuntu 22.04+ LTS | Ubuntu 22.04+ | Probado en 22.04, 24.04 |
 | **Python** | 3.8+ | 3.10+ | Python 3.11+ para mejor performance |
 | **MariaDB** | 10.3+ | 10.6+ | MySQL 8.0+ también soportado |
 | **RAM** | 2GB mínimo | 4GB | 8GB para entornos enterprise |
