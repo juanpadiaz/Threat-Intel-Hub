@@ -95,7 +95,7 @@ A diferencia de sistemas tradicionales que simplemente recolectan CVEs, Threat I
 
 | Componente | Versión Mínima | Recomendado | Notas |
 |------------|----------------|-------------|-------|
-| **OS** | Ubuntu 22.04+ | Ubuntu 22.04+ | Probado en 22.04, 24.04 |
+| **OS** | Ubuntu 22.04+ LTS | Ubuntu 24.04+ | Probado en 22.04, 24.04 |
 | **Python** | 3.8+ | 3.10+ | Python 3.11+ para mejor performance |
 | **MariaDB** | 10.3+ | 10.6+ | MySQL 8.0+ también soportado |
 | **RAM** | 2GB mínimo | 4GB | 8GB para entornos enterprise |
@@ -104,19 +104,40 @@ A diferencia de sistemas tradicionales que simplemente recolectan CVEs, Threat I
 
 ### Instalación Rápida (2 Partes)
 
-#### Parte 1: Sistema Base y Base de Datos
+#### PARTE 1: Instalación Base, Contenido del Script
+- Verificación de requisitos
+- Instalación de dependencias
+- Configuración interactiva
+- Creación de base de datos
+- Creación de usuario del sistema
+
+#### PARTE 2: Python y Comandos, Contenido del Script
+ - Entorno Python y paquetes
+ - Fix para OTX SDK
+ - Comando ti-hub-admin con init-data
+ - Comando ti-hub-advisory-gen
+ - Comando ti-hub-status
+ - Servicios systemd
+ - Configuración de cron
+
+### 🚀 Cómo instalar:
+
 ```bash
 # 1. Descargar el instalador parte 1
 git clone https://github.com/juanpadiaz/Threat-Intel-Hub.git
 
 # 2. Ingresar a la carpeta descargada
 cd Threat-Intel-Hub
+```
+#### Parte 1: Sistema Base y Base de Datos
 
+```bash
 # 3. Ejecutar instalación interactiva parte 1
 sudo bash ti_hub_installer_part1.sh
 ```
 
 #### Parte 2: Python y Comandos Administrativos
+
 ```bash
 # 4. Ejecutar instalación parte 2
 sudo bash ti_hub_installer_part2.sh
