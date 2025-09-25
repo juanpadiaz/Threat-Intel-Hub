@@ -1,7 +1,7 @@
 # 🎯 Threat Intel Hub - Actionable Intelligence Platform
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Ubuntu](https://img.shields.io/badge/Ubuntu-20.04%2B%20LTS-orange.svg)](https://ubuntu.com/)
+[![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04%2B%20LTS-orange.svg)](https://ubuntu.com/)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![MariaDB](https://img.shields.io/badge/MariaDB-10.3+-blue.svg)](https://mariadb.org/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg)](https://www.docker.com/)
@@ -95,7 +95,7 @@ A diferencia de sistemas tradicionales que simplemente recolectan CVEs, Threat I
 
 | Componente | Versión Mínima | Recomendado | Notas |
 |------------|----------------|-------------|-------|
-| **OS** | Ubuntu 20.04+ LTS | Ubuntu 22.04+ | Probado en 20.04, 22.04, 24.04 |
+| **OS** | Ubuntu 22.04+ | Ubuntu 22.04+ | Probado en 22.04, 24.04 |
 | **Python** | 3.8+ | 3.10+ | Python 3.11+ para mejor performance |
 | **MariaDB** | 10.3+ | 10.6+ | MySQL 8.0+ también soportado |
 | **RAM** | 2GB mínimo | 4GB | 8GB para entornos enterprise |
@@ -299,7 +299,7 @@ tail -f /var/log/threat-intel-hub/api/requests.log           # API requests
 
 El sistema incluye un **generador automático de MDR Threat Advisories** que crea reportes profesionales similares a los de CISA, CERT y proveedores MDR:
 
-- 🎨 **Templates HTML Profesionales**: Diseño similar a advisories reales
+- 🎨 **Templates HTML Profesionales**: Diseño editable en formato HTML para advisories
 - 📊 **Análisis de Tendencias**: KEV, EPSS spikes, nuevas campañas
 - 📎 **Archivos Excel Adjuntos**: Datos detallados para análisis
 - ⏰ **Automatización**: Generación programada con cron
@@ -601,7 +601,7 @@ sudo tar -czf ti_hub_data_backup_$(date +%Y%m%d).tar.gz /var/lib/threat-intel-hu
 
 ## 📄 Changelog
 
-### v1.0.5 ENTERPRISE (Enero 2025) - MDR Advisory Generator
+### v1.0.5 ENTERPRISE (Septiembre 2025) - MDR Advisory Generator
 - ✅ **Generador MDR Advisory**: Reportes automáticos al estilo CISA/CERT
 - ✅ **Comando ti-hub-advisory-gen**: Generación manual y automatizada
 - ✅ **Templates Profesionales**: HTML y email con diseño enterprise
@@ -613,7 +613,7 @@ sudo tar -czf ti_hub_data_backup_$(date +%Y%m%d).tar.gz /var/lib/threat-intel-hu
 - ✅ **Sistema de Comandos**: ti-hub-admin, ti-hub-status, ti-hub-advisory-gen
 - ✅ **Detección Automática Wazuh**: Integración opcional seamless
 
-### v1.0.3 (Enero 2025) - Actionable Intelligence
+### v1.0.3 (mayo 2025) - Actionable Intelligence
 - ✅ **Triggers Inteligentes**: KEV, EPSS Spikes, MISP Priority
 - ✅ **APIs REST**: 15+ endpoints para integración automatizada
 - ✅ **Export Multi-formato**: EDL, Fortinet, Snort, YARA, STIX, Sigma
@@ -636,7 +636,7 @@ Las contribuciones son bienvenidas! El proyecto sigue un modelo de desarrollo co
 
 ```bash
 # 1. Fork del repositorio
-git clone https://github.com/your-username/threat-intel-hub.git
+git clone https://github.com/juanpadiaz/threat-intel-hub.git
 
 # 2. Crear branch para feature
 git checkout -b feature/amazing-new-trigger
@@ -768,7 +768,7 @@ Para organizaciones enterprise, ofrecemos:
 - **Arquitecto**: [Juan Pablo Díaz Ezcurdia](https://www.jpdiaz.com)
 - **Licencia**: MIT License
 - **Versión**: 1.0.5 - ENTERPRISE Edition
-- **Última Actualización**: Enero 2025
+- **Última Actualización**: Septiembre 2025
 
 ### Agradecimientos Especiales
 
